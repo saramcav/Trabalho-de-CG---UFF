@@ -53,8 +53,8 @@ class Scene {
   }
 
   async init() {
-    await this.#meshes[0].loadMeshFromFile('./obj/bunny.obj');
-    await this.#meshes[1].loadMeshFromFile('./obj/armadillo.obj');
+    await this.#meshes[0].loadMeshFromFile('../obj/bunny.obj');
+    await this.#meshes[1].loadMeshFromFile('../obj/armadillo.obj');
     MeshManager.setScaleObjects(this.#meshes[0], this.#meshes[1], 3.0);
     this.#meshes[0].init(this.#gl, this.#light);
     this.#meshes[1].init(this.#gl, this.#light);

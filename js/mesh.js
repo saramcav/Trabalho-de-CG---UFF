@@ -154,7 +154,7 @@ export default class Mesh {
         normals.push(0.0);
       } 
       else {
-        for (let j=1; j<4; j++) trigs.push(parseInt(data[j].split("//")[0])-1);
+        for (let j=1; j<4; j++) if(data[j]) trigs.push(parseInt(data[j].split("//")[0])-1);
       }
     }
 
