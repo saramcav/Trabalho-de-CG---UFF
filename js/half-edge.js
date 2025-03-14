@@ -1,4 +1,4 @@
-import MeshManager from './mesh.manager.js';
+import MeshManager from './mesh_manager.js';
 
 export class Vertex {
   #vid;
